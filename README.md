@@ -1,4 +1,6 @@
-
+<p align="center">
+  <img src="https://koala.sh/api/image/v2-69oyu-a878g.jpg" alt="Cards" width="700"/>
+</p>
 
 # 🔢 Luhn's Algorithm Validator
 
