@@ -1,11 +1,8 @@
-from cs50 import get_int
-
-
 def main():
 
     number = 0
     while number < 1:
-        number = get_int("Number: ")
+        number = int(input(("Number: ")))
 
     length = len(str(number))
     checksum = get_checksum(number, length)
@@ -13,15 +10,15 @@ def main():
 
     if (checksum):
         if (length == 15) and (series == 34 or series == 37):
-            print("AMEX")
+            print("VALID AMEX CARD")
         elif (length == 16) and (series in range(51, 56)):
-            print("MASTERCARD")
+            print("VALID MASTERCARD CARD")
         elif ((length == 13 or length == 16) and int(series/10) == 4):
-            print("VISA")
+            print("VALID VISA CARD")
         else:
-            print("INVALID")
+            print("VALID CARD")
     else:
-        print("INVALID")
+        print("INVALID CARD")
 
 
 def get_checksum(number, length):
